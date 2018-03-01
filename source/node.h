@@ -4,7 +4,11 @@
       can be used in the construction of linked lists.
                 John Dolan  		March 2009
 *************************************************************************/
-
+/**
+* @file node.h
+* @brief this file is borrowed from the boook "Data Structures and Other Object Using C++"
+* @author John Dolan
+*/
 #ifndef NODE_H
 #define NODE_H
 #include "course.h"
@@ -23,8 +27,14 @@ class node{
 		{link_field = l;}
 
         // Accessor functions
+		/**
+		* @return returns the data_field value from private.
+		*/
         value_type data() const 
 		{return data_field;}
+		/**
+		* @return returns the link_field value from private.
+		*/
         node* link() 
 		{return link_field;}
 	const node* link() const

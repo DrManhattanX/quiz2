@@ -6,7 +6,11 @@
 	point system.
 		John Dolan	School of EECS		Summer 2013
 ************************************************************************/
-
+/**
+* @file course.h
+* @brief thise class stores the 3 essential features of a completed college course
+* @author John Dolan
+*/
 #include<iostream>
 #include<string>
 #ifndef COURSE_H
@@ -16,7 +20,15 @@ class course{
     public:
 	course();
 	// Input and output functions
+	/**
+	* @param ins takes in input stream ins to read in the course numbers, grades, and Credits hours.
+	* @return returns if ins.eof returns true
+	*/
 	void input(std::istream& ins);
+	/**
+	* @param outs takes in the out stream outs to diplay the info input earlier on in input
+	* @return does not return anything
+	*/
 	void output(std::ostream& outs)const;
 	// accessor functions
 	std::string get_course_number()const{

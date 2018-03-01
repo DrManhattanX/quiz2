@@ -3,6 +3,11 @@
 	course.
 		John Dolan		School of EECS		Summer2013
 **************************************************************************/
+/**
+* @file course.cc
+* @brief implementation file for course.h
+* @author John Dolan
+*/
 #include "course.h"
 #include<cstdlib>
 #include<iostream>
@@ -13,7 +18,10 @@ using namespace std;
 course::course(){
     hours = 0.0;
 }
-
+/**
+* @param ins takes in input stream ins to read in the course numbers, grades, and Credits hours.
+* @return returns if ins.eof returns true
+*/
 void course::input(std::istream& ins){
     if(ins == cin){
 	cout<<"Course Number: ";
@@ -38,7 +46,10 @@ void course::input(std::istream& ins){
     	ins>>hours;
     }
 }
-
+/**
+* @param outs takes in the out stream outs to diplay the info input earlier on in input
+* @return does not return anything
+*/
 void course::output(std::ostream& outs)const{
     if(outs == cout){
 	outs<<"Course Number:"<<course_number<<endl;

@@ -11,7 +11,11 @@
     and the .cc file for the container.
 	John Dolan			Spring 2015
 **********************************************************/
-
+/**
+* @file collegemain.cc
+* @brief the main file for project
+* @author John Dolan & Matthew Aberegg
+*/
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -23,7 +27,9 @@ using namespace std;
 
 // This function displays the menu and returns the user's choice
 int menu();
-
+/**
+* @return returns 0 if completed successfully
+*/
 int main(){
     int choice;
     course c;
@@ -100,7 +106,10 @@ int main(){
 
 return 0;
 }
-
+/**
+* @return returns the choice made through the menu options printed to screen
+*
+*/
 int menu(){
     int choice;
     cout<<"Choose from the following options:\n";

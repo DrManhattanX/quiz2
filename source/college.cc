@@ -4,13 +4,21 @@
 //CS 2401
 //10/8/2015
 //********************
+/**
+* @file college.cc
+* @brief College.cc file for project
+* @author Mathew Aberegg
+*/
 #include "college.h"
 #include<cstdlib>
 #include<iostream>
 #include<iomanip>
 #include<string>
 using namespace std;
-
+/**
+* @param s takes in string s and sets it equal to name
+* @return returns nothing
+*/
 College::College(std::string s){
 	name = s;
 	head = NULL;
@@ -25,7 +33,10 @@ College::~College(){
 		delete rmptr;
 	}
 }
-
+/**
+* @param other takes in college other and adds a new node to it.
+* @return does not return anything but will end when new node is added
+*/
 College::College(const College& other){
 	if(other.head == NULL){
 		head = NULL;

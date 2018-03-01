@@ -7,7 +7,11 @@
 		Lab 7		Fall 2014
 	John Dolan			Ohio University 
 ********************************************************************/
-
+/**
+* @file tarray.h
+* @brief this is a class to introduce templates
+* @author John Dolan
+*/
 #include<iostream>
 
 template<class T>
@@ -19,11 +23,17 @@ class Tarray{
     	// This function puts the item into the next available spot in the 
 	//array.
 	// If the array is full, resize is called.
+	/**
+	* @param item Inputs T item and puts it in the next available spot in the array
+	*/
 	void add(T item);
 
 	// iterator functions
 
 	// places the current_index at the beginning of the array
+	/**
+	* @return places the current index at the beginning of the array
+	*/
 	void start();
 
 	// returns true if the current index is less than used
